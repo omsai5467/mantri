@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.mantri-malls.com	TRUE	/	FALSE	1999999999	PHPSESSID	25026a4034967685947f60c25639b13b
+

